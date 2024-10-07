@@ -77,7 +77,7 @@ const TestimonialsColumn =(props:{
  }) => (
   <div className={twMerge("flex flex-col gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]" , props.className ) }>
           {props.testimonials.map(({text,imageSrc,name,username})=>(
-            <div className="card">
+            <div key={text} className="card">
               <div>{text}</div>
               <div className="flex items-center gap-2 mt-5">
                 <Image src={imageSrc} alt={name}  height={40} width={40} className="h-10 w-10 rounded-full"/>
