@@ -26,4 +26,10 @@
     .section-desc{
       @apply  text-center text-[22px] tracking-tight leading-[30px] text-[#010D3E];
     }
+    .section-heading{
+       @apply max-w-[540px] mx-auto;
+    }
+    .card{
+        @apply p-10 border rounded-3xl border-[#F1F1F1] shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+    }
 }
