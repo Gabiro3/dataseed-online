@@ -27,7 +27,7 @@ export const Footer = () => {
         <SocialYt/>
       </div>
       <p  className="mt-5">
-        &copy; 2024 Your Company, Inc. All rights reserved.</p>
+        &copy; 2024 shishir , Inc. All rights reserved.</p>
     </div>
   </footer>;
 };
