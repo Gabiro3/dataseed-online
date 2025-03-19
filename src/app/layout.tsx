@@ -5,7 +5,8 @@ import { twMerge }  from "tailwind-merge";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Saas Landing page",
+  title: "Dataseed Africa | Transforming agriculture across Africa",
+  description: "Transforming agriculture through data and financial inclusion across Africa",
 };
 
 export default function RootLayout({

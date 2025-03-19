@@ -1,13 +1,4 @@
 "use client"
-import avatar1 from "@/assets/avatar-1.png";
-import avatar2 from "@/assets/avatar-2.png";
-import avatar3 from "@/assets/avatar-3.png";
-import avatar4 from "@/assets/avatar-4.png";
-import avatar5 from "@/assets/avatar-5.png";
-import avatar6 from "@/assets/avatar-6.png";
-import avatar7 from "@/assets/avatar-7.png";
-import avatar8 from "@/assets/avatar-8.png";
-import avatar9 from "@/assets/avatar-9.png";
 import Image from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
@@ -15,60 +6,52 @@ import  { motion } from "framer-motion";
 
 const testimonials = [
   {
-    text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
-    imageSrc: avatar1.src,
-    name: "Jamie Rivera",
-    username: "@jamietechguru00",
+    text: "Dataseed has revolutionized the way we farm. With data-driven insights, I can now make informed decisions on what crops to plant and when to harvest, leading to better yields and profitability.",
+    name: "John Kamanzi",
+    username: "@johnkamanzi_farmer",
   },
   {
-    text: "Our team's productivity has skyrocketed since we started using this tool. ",
-    imageSrc: avatar2.src,
-    name: "Josh Smith",
-    username: "@jjsmith",
+    text: "Agaseke Finance has given us the access to credit we never had before. Their data-backed approach helps us get fair loans, allowing us to invest in better equipment and expand our farm.",
+    name: "Amina Uwase",
+    username: "@amina_uwase_farmer",
   },
   {
-    text: "This app has completely transformed how I manage my projects and deadlines.",
-    imageSrc: avatar3.src,
-    name: "Morgan Lee",
-    username: "@morganleewhiz",
+    text: "As a financial institution, we’ve seen significant improvements in loan approval accuracy and customer satisfaction thanks to Dataseed's data analytics. It allows us to make smarter, risk-adjusted lending decisions.",
+    name: "Eric Niyonzima",
+    username: "@eric_financial",
   },
   {
-    text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
-    imageSrc: avatar4.src,
-    name: "Casey Jordan",
-    username: "@caseyj",
+    text: "Thanks to Agaseke Finance, I was able to secure a loan to buy better irrigation systems. It’s a game-changer, and I’m already seeing the positive effects on my farm's productivity.",
+    name: "Sophie Mutoni",
+    username: "@sophie_mutoni_farmer",
   },
   {
-    text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
-    imageSrc: avatar5.src,
-    name: "Taylor Kim",
-    username: "@taylorkimm",
+    text: "Working with Dataseed has allowed us to better understand farming trends and predict market prices. This data-driven approach has helped our business become more competitive and sustainable.",
+    name: "Jean-Pierre Nkurunziza",
+    username: "@jeanp_financeexpert",
   },
   {
-    text: "The customizability and integration capabilities of this app are top-notch.",
-    imageSrc: avatar6.src,
-    name: "Riley Smith",
-    username: "@rileysmith1",
+    text: "Agaseke Finance has transformed how I access financing. Before, it was difficult to get a loan due to the lack of proper data, but now with their system, I can easily apply and get approved.",
+    name: "Moses Niyigena",
+    username: "@moses_niyigena_farmer",
   },
   {
-    text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
-    imageSrc: avatar7.src,
-    name: "Jordan Patels",
-    username: "@jpatelsdesign",
+    text: "We are now able to give loans based on actual data, reducing our risk and ensuring fairer lending. Dataseed’s technology has helped us better understand our clients and their needs.",
+    name: "Beatrice Ndayisenga",
+    username: "@beatrice_finance",
   },
   {
-    text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
-    imageSrc: avatar8.src,
-    name: "Sam Dawson",
-    username: "@dawsontechtips",
+    text: "With the insights from Dataseed, I’ve been able to optimize my farm’s operations and secure long-term financial stability. It’s like having a smart assistant guiding every decision I make.",
+    name: "David Karangwa",
+    username: "@david_karangwa_farmer",
   },
   {
-    text: "Its user-friendly interface and robust features support our diverse needs.",
-    imageSrc: avatar9.src,
-    name: "Casey Harper",
-    username: "@casey09",
+    text: "The data-driven solutions provided by Agaseke Finance have enabled us to lend with greater confidence. The transparency and accuracy of the data have led to a stronger relationship with our clients.",
+    name: "Francine Mugisha",
+    username: "@francine_m_finance",
   },
 ];
+
 
 const firstColumn=testimonials.slice(0,3);
 const secondColumn=testimonials.slice(3,6);
@@ -93,11 +76,10 @@ const TestimonialsColumn =(props:{
   className="flex flex-col gap-6 ">
     {[...new Array(2).fill(0).map((_,index)=>(
       <React.Fragment key="index">
-        {props.testimonials.map(({text,imageSrc,name,username})=>(
+        {props.testimonials.map(({text,name,username})=>(
             <div key={text} className="card">
               <div>{text}</div>
               <div className="flex items-center gap-2 mt-5">
-                <Image src={imageSrc} alt={name}  height={40} width={40} className="h-10 w-10 rounded-full"/>
                 <div className="flex flex-col">
                   <div className="tracking-tight font-medium leading-5">{name}</div>
                   <div className="tracking-tight leading-5">{username}</div>
@@ -120,9 +102,8 @@ export const Testimonials = () => {
         <div className="flex justify-center">
         <div className="tag">Testimonials</div>
         </div>
-        <h2 className="section-title mt-5">What our users say</h2>
-        <p className="section-desc mt-5">From intuitive design to powerful features, our app has become an 
-          essential tool for users around the world.
+        <h2 className="section-title mt-5 bg-gradient-to-b from-black to-[#1c4539]">What our clients say</h2>
+        <p className="section-desc mt-5">From enabling banks to reduce lending risk to helping farmers access finance, our solutions have made a difference in the lives of many.
         </p>
         </div>
         <div className="flex justify-center gap-6  [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] mt-10 max-h-[738px] overflow-hidden">
