@@ -191,7 +191,7 @@ export default function MobileAppPage() {
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What Our Users Say</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Don't just take our word for it. Here's what our customers have to say about Agaseke Finance.
+                Don&apos;t just take our word for it. Here&apos;s what our customers have to say about Agaseke Finance.
               </p>
             </div>
           </div>
@@ -241,7 +241,7 @@ export default function MobileAppPage() {
             <Star key={star} className="h-5 w-5 fill-current text-yellow-400" />
           ))}
         </div>
-        <p className="text-gray-500">"{testimonial.content}"</p>
+        <p className="text-gray-500">&quot;{testimonial.content}&quot;</p>
       </div>
       <div className="flex items-center space-x-4">
         <div>

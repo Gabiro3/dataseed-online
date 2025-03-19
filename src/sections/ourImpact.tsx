@@ -47,7 +47,7 @@ export default function ImpactSection() {
               <div className="space-y-2">
                 <h3 className="text-xl font-semibold text-green-800">Financial Access Provided</h3>
                 <p className="text-gray-600">
-                Through Agaseke Finance, we've facilitated access to over $50,000 in loans and financial services for previously underserved farming communities.
+                Through Agaseke Finance, we&apos;ve facilitated access to over $50,000 in loans and financial services for previously underserved farming communities.
                 </p>
               </div>
             </div>
