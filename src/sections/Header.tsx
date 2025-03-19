@@ -33,7 +33,7 @@ export const Header = () => {
             />
 
             {/* Desktop Menu */}
-            <nav className="hidden md:flex gap-6 text-black/60 items-center">
+            <nav className="hidden md:flex gap-6 text-black/60 items-center font-medium">
               <a href="#">About</a>
               <a href="#">Features</a>
               <a href="#">Customers</a>
